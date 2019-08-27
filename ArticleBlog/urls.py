@@ -22,6 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/',index),
     re_path(r'^$',index),
-    re_path(r'page/(?P<page>\d{1,2})',page_list)
+    re_path(r'page/(?P<page>\d{1,2})',page_list),
     # re_path(r'^introduce/(?P<name>\w+)/(?P<age>\d{1,2})$',introduce)
+    path('tv/',template_variable),
+    path('tl/',template_label),
 ]

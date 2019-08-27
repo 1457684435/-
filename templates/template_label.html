@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <p>for标签案例</p>
+        <hr>
+        <table border="1px">
+            <thead>
+            <tr>
+                <th>
+                    姓名
+                </th>
+                <th>
+                    年龄
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for t in teacher %}
+                <tr>
+                <td>{{ t.name }}</td>
+                <td>{{ t.age }}</td>
+                </tr>
+
+            {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
